@@ -22,22 +22,24 @@ export const WrapperStyled = styled.button<WrapperProps>`
   ${({ theme, bgColor = 'blue', hasIcon }) => css`
     width: fit-content;
     background-color: ${!!bgColor && theme.colors[bgColor]};
-    padding: 10px 20px;
-    border: none;
-    ${bgColor === 'white' && `border: solid 1px ${theme.colors.forBorder}`};
-    border-radius: ${theme.border.radius};
-    font-family: ${theme.font.family};
-    font-size: ${theme.font.sizes.small};
-    font-weight: ${bgColor === 'white'
-      ? theme.font.normal
-      : theme.font.semiBold};
-    color: ${bgColor === 'white' ? theme.colors.black : theme.colors.white};
+    border-radius: 15px;
+    background-color: transparent;
+    border: solid ${theme.colors.green};
+    color: ${theme.colors.green};
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    width: 200px;
     cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
     ${hasIcon && wrapperModifier.withIcon()}
 
     :hover {
-      opacity: 0.98;
+      box-shadow: 0 0 40px 40px #0abdba inset;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
     }
     :active {
       box-shadow: ${theme.border.shadow};

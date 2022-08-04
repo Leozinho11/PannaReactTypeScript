@@ -6,7 +6,11 @@ const HomePageView: React.FC = () => {
   return (
     <ContainerStyled>
       <TitleStyed>Arquitetura Panna Company</TitleStyed>
-      <Button title="Olá teste" callback={() => alert('teste')} />
+      <Button
+        title="Olá teste"
+        callback={() => alert('teste')}
+        bgColor="green"
+      />
     </ContainerStyled>
   )
 }

@@ -5,7 +5,7 @@ export type ButtonProps = {
   callback: () => void
   title: string
   icon?: React.ReactNode
-  bgColor?: 'blue' | 'white' | 'pink' | 'green'
+  bgColor?: 'blue' | 'white' | 'pink' | 'green' | 'darkGray'
 }
 
 const Button: React.FC<ButtonProps> = ({ title, callback, bgColor, icon }) => {

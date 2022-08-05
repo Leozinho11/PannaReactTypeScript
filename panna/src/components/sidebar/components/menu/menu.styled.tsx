@@ -6,7 +6,7 @@ export const WrapperStyled = styled.div<{ menuVisible: boolean }>`
     justify-content: flex-end;
 
     transition: all 0.2s ease-in-out;
-    background-color: ${theme.colors.darkGray};
+    background-color: ${theme.colors.green};
     width: 100vw;
   `}
 `

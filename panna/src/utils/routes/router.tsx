@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 const Router: React.FC = (): JSX.Element => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/home" element={<HomePage />} />
     </Routes>
   )
 }

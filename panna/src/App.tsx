@@ -1,16 +1,19 @@
-import React from 'react'
+/* eslint-disable react/react-in-jsx-scope */
+import Body from 'components/body/body'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
 import Router from './utils/routes/router'
 
-const App: React.FC = () => {
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Router />
+      <Body>
+        <Router />
+      </Body>
     </ThemeProvider>
   )
 }
 
-export default React.memo(App)
+export default App

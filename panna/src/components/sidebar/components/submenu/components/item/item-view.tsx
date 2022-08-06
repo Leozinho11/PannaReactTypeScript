@@ -1,6 +1,6 @@
-import React from 'react'
-import { WrapperStyled, TextStyled, NavigateToStyled } from './item.styled'
 import { SidebarContext } from 'components/sidebar/contexts/sidebar.context'
+import React from 'react'
+import { NavigateToStyled, TextStyled, WrapperStyled } from './item.styled'
 
 type ItemProps = {
   name: string

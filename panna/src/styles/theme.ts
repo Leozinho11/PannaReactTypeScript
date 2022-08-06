@@ -1,27 +1,7 @@
-import ArrowDown from 'assets/icons/arrow-down.icon'
-import BackhaulIcon from 'assets/icons/backhaul.icon'
-import EquipmentIcon from 'assets/icons/equipment.icon'
-import Financial from 'assets/icons/financial.icon'
-import HomeIcon from 'assets/icons/home.icon'
-import InboundIcon from 'assets/icons/inbound.icon'
-import RegisterIcon from 'assets/icons/register.icon'
-import ScheduleIcon from 'assets/icons/schedule.icon'
-import Settings from 'assets/icons/settings.icon'
-import TrackingIcon from 'assets/icons/tracking.icon'
 import UploadIcon from 'assets/icons/upload.icon'
 
 export default {
   icons: {
-    home: HomeIcon,
-    register: RegisterIcon,
-    backhaulIcon: BackhaulIcon,
-    arrowDown: ArrowDown,
-    scheduleIcon: ScheduleIcon,
-    trackingIcon: TrackingIcon,
-    inboundIcon: InboundIcon,
-    equipmentIcon: EquipmentIcon,
-    financial: Financial,
-    settings: Settings,
     uploadIcon: UploadIcon
   },
   border: {

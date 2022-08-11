@@ -9,7 +9,7 @@ export type BodyProps = {
 
 const BodyView: React.FC<BodyProps> = ({ children }) => {
   const location = useLocation()
-  if (location.pathname == '/login' || location.pathname == '/') {
+  if (location.pathname == '/login') {
     return <Fragment>{children}</Fragment>
   }
   return (

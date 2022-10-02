@@ -5,7 +5,7 @@ type ButtonProps = {
   callback: () => void
   title: string
   icon?: React.ReactNode
-  bgColor?: 'blue' | 'white' | 'pink' | 'green'
+  bgColor?: 'blue' | 'white' | 'aqua' | 'green'
 }
 
 const ButtonView: React.FC<ButtonProps> = ({

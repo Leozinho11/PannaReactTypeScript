@@ -12,7 +12,7 @@ const SidebarView: React.FC = () => {
   return (
     <WrapperStyled>
       <Menu />
-      {pathname !== '/home' || currentSelectedMenu ? <Submenu /> : null}
+      {pathname !== '/login' || currentSelectedMenu ? <Submenu /> : null}
     </WrapperStyled>
   )
 }

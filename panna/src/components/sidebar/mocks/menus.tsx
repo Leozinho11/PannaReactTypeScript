@@ -16,8 +16,8 @@ export const mockMenus: Menus[] = [
     title: 'Home',
     submenus: [
       {
-        name: 'Não sei',
-        path: '/teste'
+        name: 'Home',
+        path: '/home'
       }
     ]
   },
@@ -31,6 +31,14 @@ export const mockMenus: Menus[] = [
       {
         name: 'Brasileirão',
         path: '/brasileirao'
+      },
+      {
+        name: 'Champions League',
+        path: '/champions-league'
+      },
+      {
+        name: 'Europa League',
+        path: '/europa-league'
       }
     ]
   },
@@ -38,8 +46,17 @@ export const mockMenus: Menus[] = [
     title: 'contato',
     submenus: [
       {
-        name: 'sla',
-        path: '/sla'
+        name: 'contatos',
+        path: '/contatos'
+      }
+    ]
+  },
+  {
+    title: 'Login',
+    submenus: [
+      {
+        name: 'login',
+        path: '/login'
       }
     ]
   }

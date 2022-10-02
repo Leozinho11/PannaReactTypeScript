@@ -48,7 +48,7 @@ export default {
     middleBlue: '#2E75B5',
     lightBlue: '#5B9BD5',
     veryLightGray: '#E6E6E6',
-    error: '#fa3030',
+    error: '#00aa9c',
     backgrounds: 'rgb(246, 246, 246)',
     forBorder: '#D9D9D9',
     transparent: 'transparent'

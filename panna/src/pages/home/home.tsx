@@ -2,7 +2,11 @@ import React from 'react'
 import HomePageView from './home-view'
 
 const HomePage: React.FC = () => {
-  return <HomePageView />
+  return (
+    <div>
+      <HomePageView />
+    </div>
+  )
 }
 
 export default HomePage

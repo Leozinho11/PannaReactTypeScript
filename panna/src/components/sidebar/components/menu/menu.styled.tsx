@@ -7,7 +7,7 @@ export const WrapperStyled = styled.div<{ menuVisible: boolean }>`
 
     transition: all 0.2s ease-in-out;
     background-color: ${theme.colors.darkGray};
-    width: 100vw;
+    width: 100%;
   `}
 `
 

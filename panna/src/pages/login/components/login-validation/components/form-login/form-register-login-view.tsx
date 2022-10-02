@@ -13,20 +13,23 @@ interface IUser {
   email: string
   password: string
 }
-type FormRegisterLoginProps = {
+type LoginProps = {
   initialValues: IUser
   validationSchema: object
+  handleRegister: (email: string, password: string) => void
 }
 
-const FormRegisterLoginView: React.FC<FormRegisterLoginProps> = ({
+const FormRegisterLoginView: React.FC<LoginProps> = ({
   initialValues,
-  validationSchema
+  validationSchema,
+  handleRegister
 }) => {
   return (
     <FormikStyled
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting }) => {
+        handleRegister(values.email, values.password)
         setSubmitting(false)
       }}
     >

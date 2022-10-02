@@ -7,11 +7,16 @@ const initialValues = {
   password: ''
 }
 
-const FormRegisterLogin: React.FC = () => {
+interface LoginProps {
+  handleLogin: (email: string, password: string) => void
+}
+
+const FormRegisterLogin: React.FC<LoginProps> = ({ handleLogin }) => {
   return (
     <FormRegisterLoginView
       initialValues={initialValues}
       validationSchema={RegisterLoginSchema}
+      handleRegister={handleLogin}
     />
   )
 }

@@ -10,7 +10,8 @@ export const TitleStyled = styled.h1``
 
 export const MenuStyled = styled.ul`
   ${() => css`
+    display: flex;
     list-style: none;
-    width: 185px;
+    width: 100%;
   `}
 `

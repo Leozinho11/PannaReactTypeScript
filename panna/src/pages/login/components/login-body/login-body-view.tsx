@@ -1,14 +1,24 @@
+import Loading from 'components/loading/loading'
 import ContentStyled from 'components/template-authentication/template-authentication'
 import React from 'react'
 import FormRegisterLogin from '../login-validation/components/form-login/form-register-login'
 import {
   HelloStyled,
+  LoadingStyled,
   LoginContainerStyled,
   TextContainerStyled,
   UserInformationStyled
 } from './login-body.styled'
 
-const LoginView: React.FC = () => {
+interface LoginViewProps {
+  handleLogin: (email: string, password: string) => void
+  loginIsLoading: boolean
+}
+
+const LoginView: React.FC<LoginViewProps> = ({
+  handleLogin,
+  loginIsLoading
+}) => {
   return (
     <ContentStyled>
       <LoginContainerStyled>
@@ -18,8 +28,14 @@ const LoginView: React.FC = () => {
             Informe seu <strong>usuário</strong> e <strong>senha</strong>.
           </UserInformationStyled>
         </TextContainerStyled>
-        <FormRegisterLogin />
+        <FormRegisterLogin handleLogin={handleLogin} />
       </LoginContainerStyled>
+
+      {loginIsLoading && (
+        <LoadingStyled>
+          <Loading />
+        </LoadingStyled>
+      )}
     </ContentStyled>
   )
 }
